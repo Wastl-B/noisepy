@@ -37,8 +37,7 @@ or
 $ python3 -m noisepy -c 800 -r 600 -b 0.66
 ```
 
-![example](https://ibb.co/fR6Nkw "example image")
-
+![example](https://preview.ibb.co/e1EmCb/exmpl.png "example image")
 
 __Help__:
 ```commandline
