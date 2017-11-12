@@ -29,7 +29,7 @@ or
 
     $ python3 -m noisepy -c 800 -r 600 -b 0.66
 
-![alt text][example_image]
+![example](https://github.com/lymbycfyk/noisepy/blob/master/exmpl.png)
 
 __Help__:
 
@@ -45,6 +45,3 @@ __Help__:
                             set width of image
       -b RATIO, --black=RATIO
                             set black ration
-
-
-[example_image]: https://github.com/lymbycfyk/noisepy/blob/master/exmpl.png "noise example"
