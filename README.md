@@ -33,7 +33,7 @@ or
 
 __Help__:
 
-    $ python3 -m nopisepy -h
+    $ python3 -m noisepy -h
     Usage: python3 -m noisepy [options] arg1 arg2 arg3
 
     Options:
