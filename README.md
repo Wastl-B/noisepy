@@ -11,10 +11,12 @@ this is still in **development**, for better usage options, arguments, direct fi
 + pip3
 
 ### __Dependencies__ (will be installed during installation):
+
 + numpy
 + scipy
 
 ### __Installation__:
+
 ```commandline
 pip3 install noisepy
 ```

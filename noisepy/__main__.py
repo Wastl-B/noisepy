@@ -3,7 +3,7 @@ from noisepy.sauce.tableau import Tableau
 from optparse import OptionParser
 
 
-parser = OptionParser("usage: python3 -m noisepy [options] arg1 arg2 arg3", version="%prog 0.1.4")
+parser = OptionParser("usage: python3 -m noisepy [options] arg1 arg2 arg3", version="%prog 0.1.4.1")
 parser.add_option("-r", "--rows", dest="height", type=int, help="set height of image", metavar="HEIGHT")
 parser.add_option("-c", "--columns", dest="width", type=int, help="set width of image", metavar="WIDTH")
 parser.add_option("-b", "--black", dest="black", type=float, help="set black ration", metavar="RATIO")
@@ -50,7 +50,7 @@ def main():
     get_table()
     get_map()
     data_map.show()
-    data_map.resize(2.0)
+    # data_map.resize(2.0)
 
 
 if __name__ == "__main__":
