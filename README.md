@@ -16,13 +16,13 @@ __Dependencies__ (will be installed during installation):
 
 __Installation__:
 ```commandline
-sudo -H pip3 install -e git+https://github.com/lymbycfyk/noisepy.git
+pip3 install noisepy
 ```
 
 or
 
 ```commandline
-sudo -H pip3 install noisepy
+pip3 install git+https://github.com/lymbycfyk/noisepy.git
 ```
 
 __Usage__:
