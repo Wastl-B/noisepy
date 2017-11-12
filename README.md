@@ -34,7 +34,7 @@ or
 __Help__:
 
     $ python3 -m nopisepy -h
-    Usage: python3 -m nopisepy [options] arg1 arg2 arg3
+    Usage: python3 -m noisepy [options] arg1 arg2 arg3
 
     Options:
       --version             show program's version number and exit
