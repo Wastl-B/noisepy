@@ -1,5 +1,7 @@
 import numpy as np
 from scipy import misc as sp
+from time import strftime
+from os import path, mkdir
 from scipy.ndimage import zoom
 
 
@@ -14,10 +16,23 @@ class PixelMap:
             for x in range(width):
                 self.pixel_map[y, x] = self.options[self._map[y][x]]
 
-        self.image = sp.toimage(self.pixel_map)
+        # self.image = sp.toimage(self.pixel_map)
 
     def show(self):
-        self.image.show()
+        sp.imshow(self.pixel_map)
+        # self.image.show()
 
     def resize(self, factor):
         sp.toimage(sp.imresize(self.image, factor)).show()
+
+    def save(self):
+        _path = path.join(path.expanduser('~'), 'NoisePy')
+
+        if not path.isdir(_path):
+            mkdir(_path)
+
+        name = strftime("%Y-%m-%d_%H-%M-%S") + '.png'
+        filename = path.join(_path, name)
+        sp.imsave(filename, self.pixel_map)
+
+        print('file saved to ' + filename)
