@@ -3,7 +3,7 @@ from setuptools import setup
 setup(name='noisepy',
       version='0.1',
       description='generates random noisy b/w image',
-      url='will follow',
+      url='https://github.com/lymbycfyk/noisepy',
       author='lymbycfyk',
       author_email='lymbycfyk@posteo.de',
       license='None',

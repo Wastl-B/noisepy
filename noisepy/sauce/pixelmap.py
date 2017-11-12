@@ -1,5 +1,6 @@
 import numpy as np
 from scipy import misc as sp
+from scipy.ndimage import zoom
 
 
 class PixelMap:
@@ -17,3 +18,6 @@ class PixelMap:
 
     def show(self):
         self.image.show()
+
+    def resize(self, factor):
+        sp.toimage(sp.imresize(self.image, factor)).show()
