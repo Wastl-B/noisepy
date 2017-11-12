@@ -5,16 +5,16 @@ black ratio
 
 this is still in **development**, for better usage options, arguments, direct file save and more will follow
 
-#### __Requirements__: 
+### __Requirements__: 
 
 + Python3
 + pip3
 
-#### __Dependencies__ (will be installed during installation):
+### __Dependencies__ (will be installed during installation):
 + numpy
 + scipy
 
-#### __Installation__:
+### __Installation__:
 ```commandline
 pip3 install noisepy
 ```
@@ -25,7 +25,7 @@ or
 pip3 install git+https://github.com/lymbycfyk/noisepy.git
 ```
 
-#### __Usage__:
+### __Usage__:
 
 ###### the __interactive__ way
 
@@ -51,7 +51,7 @@ $ python3 -m noisepy -c 800 -r 600 -b 0.66
 
 ![example](https://preview.ibb.co/e1EmCb/exmpl.png "example image")
 
-#### __Help__:
+### __Help__:
 
 ```commandline
 python3 -m noisepy -h
