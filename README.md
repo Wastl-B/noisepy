@@ -3,7 +3,7 @@
 __NoisePy__ generates a random noise image, based on given dimension  and 
 black ratio
 
-this is still in **development**, for better usage options, arguments and direct file save will follow
+this is still in **development**, for better usage options, arguments, direct file save and more will follow
 
 __Requirements__:
 
@@ -34,7 +34,7 @@ or
 __Help__:
 
     $ python3 -m nopisepy -h
-    Usage: __main__.py [options] arg1 arg2 arg3
+    Usage: python3 -m nopisepy [options] arg1 arg2 arg3
 
     Options:
       --version             show program's version number and exit
