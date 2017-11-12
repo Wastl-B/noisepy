@@ -1,5 +1,7 @@
-noisepy
+NoisePy
 -------
+
+generates a random noise image, based on given dimension and black ratio
 
 usage::
 
