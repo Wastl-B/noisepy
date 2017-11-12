@@ -3,6 +3,8 @@
 __NoisePy__ generates a random noise image, based on given dimension  and 
 black ratio
 
+this is still in **development**, for better usage options, arguments and direct file save will follow
+
 __Requirements__:
 
 + Python3
