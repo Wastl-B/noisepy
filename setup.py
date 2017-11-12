@@ -7,7 +7,7 @@ def readme():
 
 
 setup(name='noisepy',
-      version='0.1.3',
+      version='0.1.4',
       description='generates random noisey b/w images',
       long_description=readme(),
       classifiers=[
