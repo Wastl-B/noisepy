@@ -1,12 +1,26 @@
 from setuptools import setup
 
+
+def readme():
+    with open('README.rst') as f:
+        return f.read()
+
+
 setup(name='noisepy',
-      version='0.1',
-      description='generates random noisy b/w image',
+      version='0.1.3',
+      description='generates random noisey b/w images',
+      long_description=readme(),
+      classifiers=[
+          'Development Status :: 3 - Alpha',
+          'License :: OSI Approved :: MIT License',
+          'Programming Language :: Python :: 3.6',
+          'Topic :: Multimedia :: Graphics',
+      ],
+      keywords='noise image generator snow random',
       url='https://github.com/lymbycfyk/noisepy',
       author='lymbycfyk',
       author_email='lymbycfyk@posteo.de',
-      license='None',
+      license='MIT',
       packages=['noisepy'],
       install_requires=[
           'numpy',
