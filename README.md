@@ -15,8 +15,15 @@ __Dependencies__ (will be installed during installation):
 + scipy
 
 __Installation__:
+```commandline
+sudo -H pip3 install -e git+https://github.com/lymbycfyk/noisepy.git
+```
 
-    sudo -H pip3 install -e git+https://github.com/lymbycfyk/noisepy.git
+or
+
+```commandline
+sudo -H pip3 install noisepy
+```
 
 __Usage__:
 ```commandline
@@ -30,7 +37,7 @@ or
 $ python3 -m noisepy -c 800 -r 600 -b 0.66
 ```
 
-![example](https://github.com/lymbycfyk/noisepy/blob/master/exmpl.png "example image")
+![](https://github.com/lymbycfyk/noisepy/blob/master/exmpl.png "example image")
 
 __Help__:
 ```commandline
