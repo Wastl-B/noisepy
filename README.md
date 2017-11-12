@@ -15,3 +15,14 @@ __Dependencies__ (will be installed during installation):
 __Installation__:
 
     sudo -H pip3 install -e git+https://github.com/lymbycfyk/noisepy.git
+
+__Usage__:
+
+    $ python3 -m noisepy
+    image width(pixel): 800
+    image height(pixel): 600
+    black ratio(0.X): 0.66
+    
+![alt text][example_image]
+
+[example_image]: https://github.com/lymbycfyk/noisepy/blob/master/exmpl.png "noise example"

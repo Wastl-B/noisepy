@@ -25,7 +25,6 @@ class Tableau:
         while self.check_p():
             for y in range(0, self.height):
                 self.gen_row(y)
-                print(self.row_count)
 
     def gen_row(self, y):
         self.rowc_reset()

@@ -1,6 +1,7 @@
 from noisepy.sauce.pixelmap import PixelMap
 from noisepy.sauce.tableau import Tableau
 
+
 width = int
 height = int
 p_black = float
@@ -11,10 +12,9 @@ data_map = None
 
 def get_input():
     global width, height, p_black, p_tolerance
-    width = int(input("table width: "))
-    height = int(input("table height: "))
-    p_black = float(input("%black in 0.x: "))
-    # p_tolerance = float(input("%tolerance: "))
+    width = int(input("image width(pixel): "))
+    height = int(input("image height(pixel): "))
+    p_black = float(input("black ratio(0.X): "))
 
 
 def get_table():
