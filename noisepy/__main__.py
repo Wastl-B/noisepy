@@ -27,8 +27,12 @@ def get_map():
     data_map = PixelMap(table.width, table.height, table.get_map())
 
 
-def noisey():
+def main():
     get_input()
     get_table()
     get_map()
     data_map.show()
+
+
+if __name__ == "__main__":
+    main()

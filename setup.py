@@ -13,7 +13,7 @@ setup(name='noisepy',
           'scipy',
       ],
       entry_points={
-            'console_scripts': ['noisepy=noisepy.command_line:main'],
+            'console_scripts': ['noisepy=noisepy.__main__:main'],
       },
       include_package_data=True,
       zip_safe=True)

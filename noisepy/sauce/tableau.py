@@ -21,9 +21,6 @@ class Tableau:
 
         self.gen_table()
 
-        print(self.table)
-        print(self.t_count[0] / (self.width * self.height))
-
     def gen_table(self):
         while self.check_p():
             for y in range(0, self.height):
