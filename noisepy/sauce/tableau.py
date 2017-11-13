@@ -12,7 +12,9 @@ class Tableau:
         self.options = {0: self.zero, 1: self.one}
         self.row_count = [0, 0]
         self.t_count = [0, 0]
+
         self.choices = []
+
         for i in range(100):
             if i <= p_black * 100:
                 self.choices.append(0)
