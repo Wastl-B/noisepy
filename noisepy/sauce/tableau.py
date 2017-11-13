@@ -3,30 +3,38 @@ from secrets import choice as randcho
 
 class Tableau:
 
-    def __init__(self, width, height, p_black, p_tolerance):
+    def __init__(self, width, height, p_black=None):
         self.width = width
         self.height = height
-        self.p_black = p_black
-        self.p_tolerance = p_tolerance
         self.table = [[0 for _ in range(width)] for _ in range(height)]
         self.options = {0: self.zero, 1: self.one}
         self.row_count = [0, 0]
         self.t_count = [0, 0]
 
-        self.choices = []
+        if p_black is None:
+            self.p_black = None
+            self.choices = [0, 1]
+            self.gen_table()
+        else:
+            self.p_black = p_black
+            self.p_tolerance = 0.02
+            self.choices = []
+            for i in range(100):
+                if i <= p_black * 100:
+                    self.choices.append(0)
+                else:
+                    self.choices.append(1)
 
-        for i in range(100):
-            if i <= p_black * 100:
-                self.choices.append(0)
-            else:
-                self.choices.append(1)
+            while self.check_p():
+                self.gen_table()
 
-        self.gen_table()
+    @classmethod  # to override contructor
+    def rrand(cls, width, height):
+        return cls(width, height)
 
     def gen_table(self):
-        while self.check_p():
-            for y in range(0, self.height):
-                self.gen_row(y)
+        for y in range(0, self.height):
+            self.gen_row(y)
 
     def gen_row(self, y):
         self.rowc_reset()
