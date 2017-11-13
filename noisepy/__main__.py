@@ -19,14 +19,17 @@ data_map = None
 
 def get_input():
     global width, height, p_black, parser
+
+    if options.width is None:
+        width = int(input("image width(pixel): "))
+    else:
+        width = options.width
+
     if options.height is None:
         height = int(input("image height(pixel): "))
     else:
         height = options.height
-    if options.width is None:
-        width = int(input("image width(pixel): "))
-    else:
-        height = options.height
+
     if options.black is None:
         p_black = float(input("black ratio(0.X): "))
         if p_black == 0:
@@ -50,6 +53,7 @@ def main():
     get_table()
     get_map()
     data_map.show()
+    data_map.save()
     # data_map.resize(2.0)
 
 
