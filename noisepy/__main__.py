@@ -1,5 +1,4 @@
-from noisepy.sauce.pixelmap import PixelMap
-from noisepy.sauce.tableau import Tableau
+from noisepy.sauce import Tableau, PixelMap
 from optparse import OptionParser
 
 
@@ -13,8 +12,7 @@ parser.add_option("-b", "--black", dest="black", type=float, help="set black rat
 
 width = int
 height = int
-p_black = float
-p_tolerance = 0.02  # float
+p_black = None
 table = None
 data_map = None
 
@@ -31,13 +29,15 @@ def get_input():
         height = options.height
     if options.black is None:
         p_black = float(input("black ratio(0.X): "))
+        if p_black == 0:
+            p_black = None
     else:
         p_black = options.black
 
 
 def get_table():
     global table
-    table = Tableau(width, height, p_black, p_tolerance)
+    table = Tableau(width, height, p_black)
 
 
 def get_map():

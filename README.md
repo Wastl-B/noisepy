@@ -51,6 +51,8 @@ or
 $ python3 -m noisepy -c 800 -r 600 -b 0.66
 ```
 
++ a ratio of 0 will result in a random ratio (but always at least one black or white pixel per row)
+
 ![example](https://preview.ibb.co/e1EmCb/exmpl.png "example image")
 
 ### __Help__:
